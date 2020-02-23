@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(./fonts/Montserrat-Bold.ttf) format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+.guests {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.guestsWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wrapper {
+    position: relative;
+    height: 280px;
+    width: 269px;
+    overflow: hidden;
+}
+
+
+.photo1 {
+    position: absolute;
+    left: -139px;
+    top: 5px;
+    width: 494px;
+    height: 274px;
+}
+
+.photo {
+    height: 280px;
+    width: 269px;
+}
+
+.text {
+    text-align: center;
+    font-family: Montserrat-Bold;
+    margin-bottom: 34px;
+}
+
+
+@media (min-width: 768px) {
+    .guestsWrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .wrapper {
+        width: 336px;
+        height: 345px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .photo {
+        width: 336px;
+        height: 345px;
+    }
+
+    .wrapper:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    .photo1 {
+        top: -15px;
+        bottom: 0;
+        left: -208px;
+        width: 650px;
+        height: 360px;
+    }
+}
+
+/* @media (min-width: 768px) and (max-width: 1024px) {}
+
+@media (min-width: 1025px) and (max-width: 1280px) {}
+
+@media (min-width: 1281px) {} */
